@@ -1,0 +1,155 @@
+/* STYLES
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+
+TEXTS
+
+Sedans
+  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.
+
+  SUVs
+  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.
+
+  Luxury
+  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* COLUMNS */
+.sedans {
+  height: 700px;
+  width: 33%;
+  background-color: hsl(31, 77%, 52%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 50px 50px 50px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: left;
+}
+
+.suvs {
+  height: 700px;
+  width: 33%;
+  background-color: hsl(184, 100%, 22%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 50px 50px 50px;
+  text-align: left;
+}
+
+.luxury {
+  height: 700px;
+  width: 33%;
+  background-color: hsl(179, 100%, 13%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 50px 50px 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: left;
+}
+
+/* COLUMNS DETAILS */
+.container img {
+  margin: 40px 0 40px 0;
+  width: 5rem;
+}
+
+.container h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 40px;
+}
+
+.container p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 175px;
+}
+
+.sedans .button {
+  background-color: hsl(0, 0%, 95%);
+  display: inline-block;
+  color: hsl(31, 77%, 52%);
+  border: none;
+  border-radius: 100px;
+  padding: 20px 45px;
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.suvs .button {
+  background-color: hsl(0, 0%, 95%);
+  display: inline-block;
+  color: hsl(184, 100%, 22%);
+  border: none;
+  border-radius: 100px;
+  padding: 20px 45px;
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.luxury .button {
+  background-color: hsl(0, 0%, 95%);
+  display: inline-block;
+  color: hsl(179, 100%, 13%);
+  border: none;
+  border-radius: 100px;
+  padding: 20px 45px;
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #d3d3d3;
+}
